@@ -26,8 +26,41 @@
       width: 100px;
       z-index: 9999;
     }
+
+    #animationSlider {
+      position: fixed;
+      bottom: 20px;
+      left: 550px;
+      z-index: 9999;
+    }
+
+    #modelSwitcher {
+      position: fixed;
+      bottom: 20px;
+      width: 100px;
+      left: 750px;
+      z-index: 9999;
+    }
   </style>
   <script>
+    AFRAME.registerComponent('model-switch', {
+      init: function() {
+        const modelList = ["./asset_animated.glb", "./bleu.glb" , "./yellow.glb", "./red.glb"]
+        const model = document.getElementById("3d_model")
+        const nextButton = document.getElementById('modelSwitcher')
+    
+        let idx = 1 // Start with the 2nd model as 1st is already in the scene on page load
+        const nextModel = () => {
+          // Need to remove gltf-component first
+          model.removeAttribute('gltf-model')
+          // Switch to next model in the list
+          model.setAttribute('gltf-model', `${modelList[idx]}`)
+    
+          idx = (idx + 1) % modelList.length
+        }
+        nextButton.onclick = nextModel
+      }
+    });
     AFRAME.registerComponent('model-opacity', {
       schema: { opacity: { default: 1.0 } },
       init : function() {
@@ -67,9 +100,11 @@
     <input type="range" min="0" max="1" step="0.1" value="0.5" id="opacitySlider">
     <button id="explodedView">Explode</button>
     <button id="assembledView">Assemble</button>
+    <input type="range" min="0" max="1" step="0.1" value="0" id="animationSlider">
+    <button id = "modelSwitcher">Switch</button>
     <a-scene embedded arjs>
       <a-marker preset="hiro">
-        <a-entity id="3d_model" gltf-model="./asset_animated.glb" scale="0.1 0.1 0.1" animation-mixer="timeScale: 1; clampWhenFinished: true;" model-opacity></a-entity>
+        <a-entity id="3d_model" gltf-model="./asset_animated.glb" scale="0.1 0.1 0.1" model-switch animation-mixer="timeScale: 1; clampWhenFinished: true;" model-opacity></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
@@ -95,5 +130,15 @@
       clipAction.paused = true;
     })
 
+    document.getElementById("animationSlider").addEventListener("input" , function() {
+      const sliderAnimationValue = event.target.value
+      var model = document.getElementById("3d_model")
+      var animationMixer = model.components["animation-mixer"].mixer
+      const clipAction = animationMixer._actions[0];
+      clipAction.paused = false;
+      clipAction.time = 0;
+      animationMixer.update(sliderAnimationValue);
+      clipAction.paused = true;
+    })
   </script>
 </html>
