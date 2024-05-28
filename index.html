@@ -125,7 +125,7 @@
     <button id = "modelSwitcher">std/mesh</button>
     <a-scene embedded arjs>
       <a-marker preset="hiro">
-        <a-entity id="3d_model" gltf-model="./asset_animated.glb" scale="0.1 0.1 0.1" model-switch animation-mixer="timeScale: 1; clampWhenFinished: true;" model-opacity></a-entity>
+        <a-entity id="3d_model" gltf-model="./asset_animated.glb" scale="0.1 0.1 0.1" model-switch animation-mixer="timeScale: 1; gesture-handler ; clampWhenFinished: true;" model-opacity></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
