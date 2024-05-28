@@ -8,39 +8,39 @@
     #opacitySlider {
       position: fixed;
       bottom: 20px;
-      left: 20px;
+      left: 10px;
       z-index: 9999; /* Ensure the slider is above other elements */
       width: 25%;
     }
     #explodedView {
       position: fixed;
       bottom: 20px;
-      left: 40px;
-      width: 30px;
+      left: 100px;
+      width: 25px;
       z-index: 9999;
     }
 
     #assembledView {
       position: fixed;
       bottom: 20px;
-      left: 75px;
-      width: 30px;
+      left: 150px;
+      width: 25px;
       z-index: 9999;
     }
 
     #animationSlider {
       position: fixed;
       bottom: 20px;
-      left: 120px;
+      left: 200px;
       z-index: 9999;
-      width: 30px;
+      width: 25%;
     }
 
     #modelSwitcher {
       position: fixed;
       bottom: 20px;
       width: 30px;
-      left: 150px;
+      left: 250px;
       z-index: 9999;
     }
   </style>
@@ -100,8 +100,8 @@
   </script>
   <body style="margin : 0px; overflow: hidden;">
     <input type="range" min="0" max="1" step="0.1" value="0.5" id="opacitySlider">
-    <button id="explodedView">Explode</button>
-    <button id="assembledView">Assemble</button>
+    <button id="explodedView">Exp</button>
+    <button id="assembledView">As</button>
     <input type="range" min="0" max="1" step="0.1" value="0" id="animationSlider">
     <button id = "modelSwitcher">Switch</button>
     <a-scene embedded arjs>
