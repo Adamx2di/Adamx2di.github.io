@@ -123,34 +123,11 @@
     <button id="ass">Animate</button>
     <input type="range" min="0" max="1" step="0.1" value="0" id="animationSlider">
     <button id = "modelSwitcher">std/mesh</button>
-    <a-scene 
-    embedded arjs
-    vr-mode-ui="enabled: false;"
-    loading-screen="enabled: false;"
-    renderer="logarithmicDepthBuffer: true;"
-    arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
-    id="scene"
-    embedded
-    gesture-detector
-    >
-      <a-assets>
-        <a-asset-item
-            id="animated-asset"
-            src="assets/asset.glb"
-        ></a-asset-item>
-    </a-assets>
+    <a-scene embedded arjs>
       <a-marker preset="hiro">
         <a-entity id="3d_model" gltf-model="./asset_animated.glb" scale="0.1 0.1 0.1" model-switch animation-mixer="timeScale: 1; clampWhenFinished: true;" model-opacity></a-entity>
       </a-marker>
-      <a-entity
-        camera
-        id="bowser-model"
-        scale="0.06338986406428837 0.06338986406428837 0.06338986406428837"
-        animation-mixer="loop: repeat"
-        gltf-model="#animated-asset"
-        class="clickable"
-        gesture-handler
-      ></a-entity>
+      <a-entity camera></a-entity>
     </a-scene>
   </body>
   <script>
