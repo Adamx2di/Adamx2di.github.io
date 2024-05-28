@@ -124,6 +124,8 @@
     <input type="range" min="0" max="1" step="0.1" value="0" id="animationSlider">
     <button id = "modelSwitcher">std/mesh</button>
     <a-scene embedded arjs>
+    embedded
+    gesture-detector
       <a-marker preset="hiro">
         <a-entity id="3d_model" gltf-model="./asset_animated.glb" scale="0.1 0.1 0.1" model-switch animation-mixer="timeScale: 1; gesture-handler ; clampWhenFinished: true;" model-opacity></a-entity>
       </a-marker>
