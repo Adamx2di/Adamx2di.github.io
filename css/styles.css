@@ -3,7 +3,7 @@
     height: 100vh; /* Adjust as needed */
     display: flex;
     align-items: flex-end; /* Aligns the button container to the bottom */
-    bottom: 5px;
+    bottom: 8px;
     justify-content: center; /* Center horizontally, if needed */
 }
 
@@ -22,13 +22,13 @@
 .button-container button:last-child {
     margin-right: 0; /* Removes margin from the last button */
 }
-/* ends first starts second ligne */
+/* ends first starts second ligne ------------------------*/
 .cont2 {
     position: relative;
     height: 100vh; /* Full viewport height */
     display: flex;
     align-items: flex-end; /* Aligns the button container to the bottom */
-    bottom: 20px;
+    bottom: 16px;
     justify-content: center; /* Center horizontally */
 }
 
@@ -46,18 +46,13 @@
     margin: 0 0.5%; /* Optional: Adjusts space between buttons */
 }
 
-/* Removes margin from the last button */
-.button-cont2 button:last-child {
-    margin-right: 0;
-}
-
 /* Makes the last three buttons hidden by setting opacity to 0 */
 .button-cont2 button:nth-last-child(-n+3) {
     opacity: 0;
     pointer-events: none; /* Optional: Makes the buttons non-interactive */
 }
 
-/* The side navigation menu */
+/* The side navigation menu ----------------------*/
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
