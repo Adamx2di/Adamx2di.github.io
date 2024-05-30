@@ -3,6 +3,7 @@
     height: 100vh; /* Adjust as needed */
     display: flex;
     align-items: flex-end; /* Aligns the button container to the bottom */
+    bottom: 5;
     justify-content: center; /* Center horizontally, if needed */
 }
 
