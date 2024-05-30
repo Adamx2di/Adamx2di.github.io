@@ -1,41 +1,18 @@
-#opacitySlider {
-    position: fixed;
-    bottom: 20px;
-    left: 10px;
-    z-index: 9999;
-    width: 20%;
-}
-#animationSlider {
-    position: fixed;
-    bottom: 20px;
-    left: 230px;
-    z-index: 9999;
-    width: 20%;
-}
-#explodedView {
-    position: fixed;
-    bottom: 20px;
-    left: 450px;
-    width: 50px;
-    z-index: 9999;
+.button-container {
+    width: 100%; /* Container width is 100% of its parent */
+    overflow: hidden; /* Clears floats */
 }
 
-#assembledView {
-    position: fixed;
-    bottom: 20px;
-    left: 520px;
-    width: 50px;
-    z-index: 9999;
+.button-container button {
+    width: 18%; /* Each button takes up approximately 18% of the container width */
+    margin-right: 2%; /* Adjusts space between buttons */
+    float: left; /* Positions buttons next to each other */
+    box-sizing: border-box; /* Ensures padding/border doesn't affect width calculation */
 }
 
-#modelSwitcher {
-    position: fixed;
-    bottom: 20px;
-    width: 80px;
-    right: 100px;
-    z-index: 9999;
+.button-container button:last-child {
+    margin-right: 0; /* Removes margin from the last button */
 }
-
 #ass {
     position: fixed;
     bottom: 50px;
