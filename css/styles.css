@@ -7,7 +7,7 @@
     left: 0;
     width: 100%;
     padding: 10px;
-    background-color: #f0f0f0;
+    background-color: #0B3641;
 }
 
 button {
@@ -15,8 +15,8 @@ button {
     margin: 0 5px;
 }
 
-#explodedView, #assembledView {
-    flex-grow: 2; /* Making the first two buttons larger */
+#opacitySlider, #animationSlider {
+    width: 60%;
 }
 
 #ass {
