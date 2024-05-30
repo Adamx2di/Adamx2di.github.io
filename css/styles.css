@@ -1,28 +1,27 @@
-.cont2 {
+.container {
     position: relative;
     height: 100vh; /* Adjust as needed */
     display: flex;
-    align-items: flex-end; /* Aligns the button cont2 to the bottom */
-    bottom: 20px;
+    align-items: flex-end; /* Aligns the button container to the bottom */
     justify-content: center; /* Center horizontally, if needed */
 }
 
-.button-cont2 {
+.button-container {
     display: flex;
     justify-content: space-between; /* Distributes space evenly between buttons */
-    width: 100%; /* cont2 width is 100% of its parent */
-    max-width: 600px; /* Optional: Limits the max width of the button cont2 */
+    width: 100%; /* Container width is 100% of its parent */
+    bottom: 3px;
+    max-width: 600px; /* Optional: Limits the max width of the button container */
 }
 
-.button-cont2 button {
+.button-container button {
     flex: 1; /* Each button takes equal space */
     margin: 0 0.5%; /* Optional: Adjusts space between buttons */
 }
 
-.button-cont2 button:last-child {
+.button-container button:last-child {
     margin-right: 0; /* Removes margin from the last button */
 }
-
 /* The navigation menu links */
 .sidenav a {
     padding: 8px 8px 8px 32px;
