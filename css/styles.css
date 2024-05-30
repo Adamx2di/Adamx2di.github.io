@@ -38,6 +38,7 @@ button {
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    opacity: 0.8
 }
 
 /* The navigation menu links */
@@ -76,8 +77,8 @@ button {
 
 #main-content {
     position: fixed;
-    top: 50px;
-    left: 65px;
+    top: 25px;
+    left: 25px;
     width: 80px;
     z-index: 9999;
 }
