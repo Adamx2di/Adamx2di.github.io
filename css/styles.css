@@ -1,39 +1,22 @@
-#opacitySlider {
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
-    bottom: 20px;
-    left: 10px;
-    z-index: 9999;
-    width: 20%;
-}
-#animationSlider {
-    position: fixed;
-    bottom: 20px;
-    left: 230px;
-    z-index: 9999;
-    width: 20%;
-}
-#explodedView {
-    position: fixed;
-    bottom: 20px;
-    left: 450px;
-    width: 50px;
-    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
 }
 
-#assembledView {
-    position: fixed;
-    bottom: 20px;
-    left: 520px;
-    width: 50px;
-    z-index: 9999;
+button {
+    flex-grow: 1;
+    margin: 0 5px;
 }
 
-#modelSwitcher {
-    position: fixed;
-    bottom: 20px;
-    width: 80px;
-    right: 100px;
-    z-index: 9999;
+#explodedView, #assembledView {
+    flex-grow: 2; /* Making the first two buttons larger */
 }
 
 #ass {
