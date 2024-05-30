@@ -1,13 +1,21 @@
+.container {
+    position: relative;
+    height: 100vh; /* Adjust as needed */
+    display: flex;
+    align-items: flex-end; /* Aligns the button container to the bottom */
+    justify-content: center; /* Center horizontally, if needed */
+}
+
 .button-container {
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between buttons */
     width: 100%; /* Container width is 100% of its parent */
-    overflow: hidden; /* Clears floats */
+    max-width: 600px; /* Optional: Limits the max width of the button container */
 }
 
 .button-container button {
-    width: 18%; /* Each button takes up approximately 18% of the container width */
-    margin-right: 2%; /* Adjusts space between buttons */
-    float: left; /* Positions buttons next to each other */
-    box-sizing: border-box; /* Ensures padding/border doesn't affect width calculation */
+    flex: 1; /* Each button takes equal space */
+    margin: 0 0.5%; /* Optional: Adjusts space between buttons */
 }
 
 .button-container button:last-child {
