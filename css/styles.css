@@ -1,27 +1,25 @@
 .container {
-    position: absolute;
+    position: relative;
     height: 90vh; /* Adjust as needed */
-    display: flex;
-    align-items: flex-end; /* Aligns the button container to the bottom */
-    bottom: 4px;
-    justify-content: center; /* , if needed */
 }
 
 .button-container {
+    position: absolute;
+    bottom: 0; /* Positions the button container at the bottom */
+    width: 100%; /* Container width is 100% of its parent */
     display: flex;
     justify-content: space-between; /* Distributes space evenly between buttons */
-    width: 100%; /* Container width is 100% of its parent */
-    max-width: 700px; /* Optional: Limits the max width of the button container */
 }
 
 .button-container button {
-    flex: 1; /* Each button takes equal space */
-    margin: 0 0.5%; /* Optional: Adjusts space between buttons */
+    width: 18%; /* Each button takes up approximately 18% of the container width */
+    margin-right: 2%; /* Adjusts space between buttons */
+    box-sizing: border-box; /* Ensures padding/border doesn't affect width calculation */
 }
+
 .button-container button:last-child {
     margin-right: 0; /* Removes margin from the last button */
 }
-
 /* The side navigation menu ----------------------*/
 .sidenav {
     height: 100%; /* 100% Full-height */
