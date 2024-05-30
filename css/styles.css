@@ -3,7 +3,7 @@
     height: 100vh; /* Adjust as needed */
     display: flex;
     align-items: flex-end; /* Aligns the button container to the bottom */
-    bottom: 2px;
+    bottom: 3px;
     justify-content: left; /* , if needed */
 }
 
@@ -11,16 +11,12 @@
     display: flex;
     justify-content: space-between; /* Distributes space evenly between buttons */
     width: 100%; /* Container width is 100% of its parent */
-    max-width: 600px; /* Optional: Limits the max width of the button container */
+    max-width: 700px; /* Optional: Limits the max width of the button container */
 }
 
 .button-container button {
     flex: 1; /* Each button takes equal space */
-    margin: 0 0.5%; /* Optional: Adjusts space between buttons */
-}
-
-.button-container button:last-child {
-    margin-right: 0; /* Removes margin from the last button */
+    margin: 0 1%; /* Optional: Adjusts space between buttons */
 }
 
 /* The side navigation menu ----------------------*/
