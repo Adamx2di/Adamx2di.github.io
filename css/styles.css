@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100% - 17px); /* Adjust padding */
+    width: calc(100% - 20px); /* Adjust padding */
     padding: 10px;
     background-color: #0B3641;
 }
