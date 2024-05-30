@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between; /* Distributes space evenly between buttons */
     width: 100%; /* Container width is 100% of its parent */
-    bottom: 3px;
     max-width: 600px; /* Optional: Limits the max width of the button container */
 }
 
