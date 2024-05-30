@@ -1,4 +1,5 @@
 .outer-box {
+    position: static;
     bottom: 5px; /* Adjust as needed */
     left: 0;
     width: 100%;
