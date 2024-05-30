@@ -3,7 +3,7 @@
     height: 100vh; /* Adjust as needed */
     display: flex;
     align-items: flex-end; /* Aligns the button container to the bottom */
-    bottom: 5;
+    bottom: 5px;
     justify-content: center; /* Center horizontally, if needed */
 }
 
@@ -22,19 +22,39 @@
 .button-container button:last-child {
     margin-right: 0; /* Removes margin from the last button */
 }
-#ass {
-    position: fixed;
-    bottom: 50px;
-    left: 290px;
-    width: 80px;
-    z-index: 9999;
+/* ends first starts second ligne */
+.cont2 {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: flex-end; /* Aligns the button container to the bottom */
+    bottom: 20px;
+    justify-content: center; /* Center horizontally */
 }
-#op {
-    position: fixed;
-    bottom: 50px;
-    left: 65px;
-    width: 80px;
-    z-index: 9999;
+
+/* Button container with flexbox to distribute space evenly */
+.button-cont2 {
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between buttons */
+    width: 100%; /* Full width of its parent */
+    max-width: 600px; /* Optional: Limits the max width of the button container */
+}
+
+/* Each button takes equal space and has a margin */
+.button-cont2 button {
+    flex: 1; /* Each button takes equal space */
+    margin: 0 0.5%; /* Optional: Adjusts space between buttons */
+}
+
+/* Removes margin from the last button */
+.button-cont2 button:last-child {
+    margin-right: 0;
+}
+
+/* Makes the last three buttons hidden by setting opacity to 0 */
+.button-cont2 button:nth-last-child(-n+3) {
+    opacity: 0;
+    pointer-events: none; /* Optional: Makes the buttons non-interactive */
 }
 
 /* The side navigation menu */
