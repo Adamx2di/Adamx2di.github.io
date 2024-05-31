@@ -1,16 +1,16 @@
 {
     "names":[
-        "asset_animated", 
+        "asset_animated",
         "moule1",
         "moule2",
         "moule2-bloc porte empreinte inf",
-        "moule2-bloc porte empreinte inf-M moule2-bloc porte empreinte sup",
-        "moule2-bloc porte empreinte sup-M moule2-contre plaque d'ejection",
+        "moule2-bloc porte empreinte sup",
+        "moule2-contre plaque d'ejection",
         "moule2-plaque d'ejection",
         "moule2-contre plaque d'ejection",
         "moule2-semelle inf",
         "moule2-semelle sup",
-        "moule2-tasseau",
+        "moule2-tasseau"
 
 
     ]
