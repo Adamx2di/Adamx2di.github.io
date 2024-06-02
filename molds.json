@@ -33,7 +33,16 @@
         "Mold3-Ejector plate",
         "Mold3-Ejector retaining plate",
         "Mold3-Spacer block",
-        "Mold3-Top clamping plate"
+        "Mold3-Top clamping plate",
+        "Extra-Hot Runner",
+        "Extra-Ejector1",
+        "Extra-Ejector2",
+        "Extra-Ejector3",
+        "Extra-Ejector4",
+        "Extra-Nozzle1",
+        "Extra-Nozzle2",
+        "Extra-Nozzle3",
+        "Extra-Nozzle4"
 
     ]
 }
