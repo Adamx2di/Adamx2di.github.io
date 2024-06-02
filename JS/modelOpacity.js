@@ -5,7 +5,7 @@ AFRAME.registerComponent('model-opacity', {
         var slider = document.getElementById("opacitySlider");
         slider.addEventListener("input", function() {
         self.data.opacity = event.target.value;
-        self.update(); // update the opacity value based on the
+        self.update(); // update the opacity value based on the slider value
         
         })
         
