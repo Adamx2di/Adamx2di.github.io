@@ -1,0 +1,95 @@
+.outer-box {
+    position: fixed;
+    bottom: 5px; /* Adjust as needed */
+    left: 0;
+    width: 90%;
+    Z-index: 1;
+    opacity: 0.8
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%; /* Adjust padding */
+    left: 0;
+    padding: 10px;
+    background-color: #0B3641;
+    Z-index: 2;
+}
+
+button {
+    flex-grow: 1;
+    margin: 10px;
+}
+
+#opacitySlider, #animationSlider {
+    width: 25%;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 60%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    opacity: 0.8
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 3px 3px 3px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #b3b3b3;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: sticky;
+    top: 0;
+    text-align: right;
+    font-size: 36px;
+    margin-right: 25px;
+}
+
+/* Main content */
+#main-content button{
+    transition: margin-right .5s;
+    width: 50px;
+    padding: 5px;
+    z-index: 9999;
+    
+}
+
+#main-content {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    width: 80px;
+    z-index: 9999;
+}
+
+#moldMenu {
+    overflow: auto;
+}
+
+#moldMenu a:hover{
+    cursor: pointer;
+}
